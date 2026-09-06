@@ -353,7 +353,7 @@ function copyLink() {
             </template>
             <template v-else-if="counters">
               <Badge
-                variant="secondary"
+                variant="outline"
                 class="shrink-0"
                 :aria-label="$t('links.stats.visits', { count: counters.visits })"
               >
@@ -361,7 +361,7 @@ function copyLink() {
                 {{ counters.visits }}
               </Badge>
               <Badge
-                variant="secondary"
+                variant="outline"
                 class="shrink-0"
                 :aria-label="$t('links.stats.visitors', { count: counters.visitors })"
               >
@@ -369,7 +369,7 @@ function copyLink() {
                 {{ counters.visitors }}
               </Badge>
               <Badge
-                variant="secondary"
+                variant="outline"
                 class="shrink-0"
                 :aria-label="$t('links.stats.referers', { count: counters.referers })"
               >

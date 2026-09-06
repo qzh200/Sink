@@ -2,6 +2,7 @@
 import { useScroll } from '@vueuse/core'
 import HoshiumiBackground from '@/components/HoshiumiBackground.vue'
 import HoshiumiBackLink from '@/components/HoshiumiBackLink.vue'
+import HoshiumiThemeToggle from '@/components/HoshiumiThemeToggle.vue'
 
 const { pageTitle } = useDashboardRoute()
 const route = useRoute()
@@ -20,8 +21,9 @@ useSeoMeta({
 
 <template>
   <HoshiumiBackground />
-  <HoshiumiBackLink />
   <SidebarProvider>
+    <HoshiumiBackLink auto-hide-on-sidebar />
+    <HoshiumiThemeToggle />
     <a
       href="#dashboard-main"
       class="
