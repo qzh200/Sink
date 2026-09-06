@@ -155,7 +155,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     baseUrl: '/',
-    defaultLocale: 'en-US',
+    defaultLocale: 'zh-CN',
   },
   shadcn: {
     /**
@@ -167,5 +167,16 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './app/components/ui',
+  },
+  app: {
+    head: {
+      script: [
+        {
+          defer: true,
+          src: 'https://cloud.umami.is/script.js',
+          'data-website-id': 'e88928b4-1a8c-403a-ad3f-96a264e8165a',
+        },
+      ],
+    },
   },
 })

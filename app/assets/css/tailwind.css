@@ -48,77 +48,102 @@
 
 :root {
   color-scheme: light;
-  --radius: 0.625rem;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.21 0.006 285.885);
-  --success: oklch(0.55 0.16 145);
-  --success-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.705 0.015 286.067);
-  --chart-1: oklch(0.871 0.15 154.449);
-  --chart-2: oklch(0.723 0.219 149.579);
-  --chart-3: oklch(0.627 0.194 149.214);
-  --chart-4: oklch(0.527 0.154 150.069);
-  --chart-5: oklch(0.448 0.119 151.328);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.21 0.006 285.885);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.705 0.015 286.067);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
+  --radius: 0.75rem;
+  /* Hoshiumi 浅色主题——覆盖 shadcn-vue 默认 zinc 配色 */
+  --card: #ffffff;
+  --card-foreground: #3d4266;
+  --popover: #ffffff;
+  --popover-foreground: #3d4266;
+  --primary: #7f9df2;
+  --primary-foreground: #ffffff;
+  --secondary: #f0a9cc;
+  --secondary-foreground: #3d4266;
+  --muted: #eef1fb;
+  --muted-foreground: #6c729b;
+  --accent: #9d92ec;
+  --accent-foreground: #ffffff;
+  --success: #4ade80;
+  --success-foreground: #ffffff;
+  --destructive: #b1372e;
+  --border: #c5c9d8;
+  --input: #c5c9d8;
+  --ring: #7f9df2;
+  --chart-1: #7f9df2;
+  --chart-2: #9d92ec;
+  --chart-3: #f0a9cc;
+  --chart-4: #6c729b;
+  --chart-5: #a2a6c6;
+  --sidebar: #f4f6fe;
+  --sidebar-foreground: #3d4266;
+  --sidebar-primary: #7f9df2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #9d92ec;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #c5c9d8;
+  --sidebar-ring: #7f9df2;
+  --background: #f4f6fe;
+  --foreground: #3d4266;
+  --ink: #3d4266;
+  --ink-soft: #6c729b;
+  --ink-faint: #a2a6c6;
+  --ink-line: #c5c9d8;
+  --line: 122 129 186;
+  --shadow: 90 98 164;
+  --card-bg-opacity: 0.6;
+  --card-border-opacity: 0.35;
+  --card-blur: 20px;
+  --card-radius: 22px;
+  --star: 104 128 226;
+  --orb-opacity: 0.5;
+  --noise-opacity: 0.045;
 }
 
 .dark {
   color-scheme: dark;
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.92 0.004 286.32);
-  --primary-foreground: oklch(0.21 0.006 285.885);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
-  --success: oklch(0.72 0.17 145);
-  --success-foreground: oklch(0.18 0.04 145);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.552 0.016 285.938);
-  --chart-1: oklch(0.871 0.15 154.449);
-  --chart-2: oklch(0.723 0.219 149.579);
-  --chart-3: oklch(0.627 0.194 149.214);
-  --chart-4: oklch(0.527 0.154 150.069);
-  --chart-5: oklch(0.448 0.119 151.328);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.552 0.016 285.938);
+  --background: #1c2145;
+  --foreground: #e9ebfd;
+  --card: #1c2145;
+  --card-foreground: #e9ebfd;
+  --popover: #1c2145;
+  --popover-foreground: #e9ebfd;
+  --primary: #9fb6ff;
+  --primary-foreground: #1c2145;
+  --secondary: #f2b4dc;
+  --secondary-foreground: #1c2145;
+  --muted: #181f48;
+  --muted-foreground: #a4aad0;
+  --accent: #bdb0ff;
+  --accent-foreground: #1c2145;
+  --success: #4ade80;
+  --success-foreground: #1c2145;
+  --destructive: #fbb4ad;
+  --border: #6b7194;
+  --input: #6b7194;
+  --ring: #9fb6ff;
+  --chart-1: #9fb6ff;
+  --chart-2: #bdb0ff;
+  --chart-3: #f2b4dc;
+  --chart-4: #a4aad0;
+  --chart-5: #7d84ae;
+  --sidebar: #181f48;
+  --sidebar-foreground: #e9ebfd;
+  --sidebar-primary: #9fb6ff;
+  --sidebar-primary-foreground: #1c2145;
+  --sidebar-accent: #bdb0ff;
+  --sidebar-accent-foreground: #1c2145;
+  --sidebar-border: #6b7194;
+  --sidebar-ring: #9fb6ff;
+  --ink: #e9ebfd;
+  --ink-soft: #a4aad0;
+  --ink-faint: #9aa0c4;
+  --ink-line: #6b7194;
+  --line: 150 160 232;
+  --shadow: 3 6 24;
+  --card-bg-opacity: 0.6;
+  --card-border-opacity: 0.35;
+  --star: 186 201 255;
+  --orb-opacity: 0.36;
+  --noise-opacity: 0.06;
 }
 
 @layer base {
@@ -129,7 +154,15 @@
   }
   body {
     @apply bg-background text-foreground;
-    @apply font-sans;
+    /* 与 hoshiumi 系列其它站点统一字体栈 */
+    font-family:
+      ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+      'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   button:not(:disabled),
@@ -175,4 +208,193 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ============================================================================
+ * Hoshiumi 极光背景（与 hoshiumi_home / hoshiumi_drive / hoshiumi_stats 同款）
+ *  - 渐变氛围 + 三个主题色光斑 + 种子随机星 + 噪点
+ *  - 全部由 :root / .dark 的主题色变量驱动，随主题自动切换
+ * ==========================================================================*/
+.bg-scene {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: var(--background);
+}
+.bg-scene__layer {
+  position: absolute;
+  inset: 0;
+}
+.bg-scene__tint {
+  background: linear-gradient(
+    172deg,
+    color-mix(in srgb, var(--primary) 9%, transparent) 0%,
+    transparent 36%,
+    transparent 64%,
+    color-mix(in srgb, var(--secondary) 8%, transparent) 100%
+  );
+}
+.orb {
+  position: absolute;
+  width: clamp(300px, 46vw, 620px);
+  height: clamp(300px, 46vw, 620px);
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: var(--orb-opacity);
+  will-change: transform;
+}
+.orb--a {
+  top: -18%;
+  left: -8%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--primary) 55%, transparent),
+    transparent 74%
+  );
+}
+.orb--b {
+  top: -2%;
+  right: -14%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--secondary) 50%, transparent),
+    transparent 74%
+  );
+}
+.orb--c {
+  bottom: -22%;
+  left: 16%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--accent) 48%, transparent),
+    transparent 76%
+  );
+}
+@keyframes orb-drift-a {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(7vw, -4vh, 0) scale(1.08); }
+}
+@keyframes orb-drift-b {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(-6vw, 6vh, 0) scale(0.94); }
+}
+@keyframes orb-drift-c {
+  from { transform: translate3d(0, 0, 0) scale(1.04); }
+  to   { transform: translate3d(4vw, -7vh, 0) scale(0.98); }
+}
+.bg-scene--moving .orb--a { animation: orb-drift-a 64s ease-in-out infinite alternate; }
+.bg-scene--moving .orb--b { animation: orb-drift-b 84s ease-in-out infinite alternate; }
+.bg-scene--moving .orb--c { animation: orb-drift-c 104s ease-in-out infinite alternate; }
+.star {
+  position: absolute;
+  border-radius: 9999px;
+  background: currentColor;
+  color: rgb(var(--star));
+  animation: star-twinkle 6s ease-in-out infinite;
+}
+.star--sm { width: 1.5px; height: 1.5px; opacity: 0.5; }
+.star--lg {
+  width: 2.5px;
+  height: 2.5px;
+  opacity: 0.85;
+  box-shadow: 0 0 6px 0 rgb(var(--star) / 0.8);
+}
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.35; transform: scale(0.9); }
+  50%      { opacity: 1; transform: scale(1.1); }
+}
+.bg-scene__noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: var(--noise-opacity);
+  background-size: 160px 160px;
+}
+
+/* ============================================================================
+ * 左上角「返回 Hoshiumi 主页」按钮
+ *  - 视觉与 home/drive/stats 同款：40px 玻璃圆 + 蓝色 hover
+ *  - 避开 Sink 现有顶部 fixed 顶栏（z-index 50 < 60）
+ * ==========================================================================*/
+.back-link {
+  position: fixed;
+  top: max(14px, env(safe-area-inset-top));
+  left: max(14px, env(safe-area-inset-left));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--line) / var(--card-border-opacity, 0.4));
+  background: color-mix(in srgb, var(--background) 80%, transparent);
+  color: var(--ink-soft);
+  backdrop-filter: blur(var(--card-blur, 18px));
+  -webkit-backdrop-filter: blur(var(--card-blur, 18px));
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+.back-link:hover {
+  transform: translateY(-2px);
+  color: var(--primary);
+  border-color: rgb(var(--line) / 0.7);
+}
+.back-link svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+/* ============================================================================
+ * 右上角主题切换（与 .back-link 镜像）
+ *  - 三态：浅色 / 深色 / 跟随系统
+ *  - 由 :root[data-theme-choice] 驱动显示哪一个 icon
+ *  - 视觉与 home / drive / stats 同款：40px 玻璃圆 + 蓝色 hover
+ * ==========================================================================*/
+.theme-toggle {
+  position: fixed;
+  top: max(14px, env(safe-area-inset-top));
+  right: max(14px, env(safe-area-inset-right));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--line) / var(--card-border-opacity, 0.4));
+  background: color-mix(in srgb, var(--background) 80%, transparent);
+  color: var(--ink-soft);
+  backdrop-filter: blur(var(--card-blur, 18px));
+  -webkit-backdrop-filter: blur(var(--card-blur, 18px));
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  color: var(--primary);
+  border-color: rgb(var(--line) / 0.7);
+}
+.theme-toggle__icon {
+  display: none;
+  width: 18px;
+  height: 18px;
+}
+.theme-toggle__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+:root[data-theme-choice='light'] .theme-toggle__icon--light,
+:root[data-theme-choice='dark'] .theme-toggle__icon--dark,
+:root[data-theme-choice='system'] .theme-toggle__icon--system {
+  display: block;
 }

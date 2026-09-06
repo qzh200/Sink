@@ -7,7 +7,7 @@ const localeHead = useLocaleHead()
 const colorMode = useColorMode()
 
 useSeoMeta({
-  title: `${title} - Link Shortener with Analytics`,
+  title: `${title} · 短链接服务`,
   description,
   ogType: 'website',
   ogTitle: title,

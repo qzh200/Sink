@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useScroll } from '@vueuse/core'
+import HoshiumiBackground from '@/components/HoshiumiBackground.vue'
+import HoshiumiBackLink from '@/components/HoshiumiBackLink.vue'
 
 const { pageTitle } = useDashboardRoute()
 const route = useRoute()
@@ -17,6 +19,8 @@ useSeoMeta({
 </script>
 
 <template>
+  <HoshiumiBackground />
+  <HoshiumiBackLink />
   <SidebarProvider>
     <a
       href="#dashboard-main"
