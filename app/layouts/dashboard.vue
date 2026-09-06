@@ -66,6 +66,7 @@ useSeoMeta({
             class="
               flex w-full flex-wrap items-center gap-2
               sm:ml-auto sm:w-auto sm:flex-1 sm:flex-nowrap sm:justify-end
+              sm:pr-14
             "
           />
         </header>
